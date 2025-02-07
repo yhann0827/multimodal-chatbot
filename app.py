@@ -156,7 +156,6 @@ def main():
     user_prompt = st.chat_input('Ask something...')
 
     selected_model = select_model_version(model_choice)
-    st.write(selected_model)
 
     if user_prompt:
 
