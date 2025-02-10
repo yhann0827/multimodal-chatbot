@@ -15,7 +15,7 @@ def select_model_version(model_choice):
     elif model_choice == "Llama":
         selected_model = st.sidebar.selectbox(
             "Choose Llama Model",
-            ["llama-3.1-nemotron-70b-instruct", "llama-3.1-nemotron-51b-instruct","llama3-chatqa-1.5-70b", "llama3-chatqa-1.5-8b", "nemotron-mini-4b-instruct", "llama3-chatqa-1.5-8b"],
+            ["llama-3.1-nemotron-70b-instruct", "llama-3.1-nemotron-51b-instruct","llama3-chatqa-1.5-70b", "llama3-chatqa-1.5-8b", "nemotron-mini-4b-instruct"],
             index=0
         )
     else:
