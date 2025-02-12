@@ -132,6 +132,9 @@ def main():
         index=0
     )
 
+    if st.sidebar.button("Reset Chat"):
+        st.session_state.clear()
+
     # Model Parameters (User Input)
     st.sidebar.markdown("### ⚙️Model Parameters")
     temperature = st.sidebar.number_input("Temperature (0.0 - 1.0)", min_value=0.0, max_value=1.0, value=0.7, step=0.01)
